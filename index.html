@@ -1,1 +1,144 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 12px 18px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #2c3e50;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .hotel-showcase {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .hotel-showcase img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .hotel-showcase h2 {
+            margin-top: 10px;
+        }
+        .booking-form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .booking-form label {
+            display: block;
+            margin: 8px 0 5px;
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .booking-form button {
+            background: #27ae60;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .booking-form button:hover {
+            background: #2ecc71;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hotel Paradise</h1>
+    <p>Your luxury stay awaits</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Rooms</a>
+    <a href="#">Facilities</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <section class="hotel-showcase">
+        <img src="https://via.placeholder.com/900x400" alt="Hotel Image">
+        <h2>About Our Hotel</h2>
+        <p>Located in the heart of the city, Hotel Paradise offers luxurious rooms, gourmet dining, and breathtaking views. Whether you’re here for business or leisure, we ensure your stay is unforgettable.</p>
+    </section>
+
+    <section class="booking-form">
+        <h2>Book Your Stay</h2>
+        <form>
+            <label for="checkin">Check-In Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-Out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4+</option>
+            </select>
+
+            <label for="room">Room Type</label>
+            <select id="room" name="room">
+                <option>Standard</option>
+                <option>Deluxe</option>
+                <option>Suite</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Hotel Paradise | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
